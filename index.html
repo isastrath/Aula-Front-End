@@ -1,74 +1,47 @@
 <!DOCTYPE html>
-<html lang="PT-br">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--link do Favicon-->
+    <!--links para logotipo favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
-    <link rel="shortcut icon" href="./ironmainceep/favicon-16x16.png" type="image/x-icon">
-    <title>CEEP</title>
-
-    <!--Reset css
-    <link rel="stylesheet" href="./reset.css">-->
-
-    <!--link para o css-->
+<!--link para imagem da aba dos navegadores-->
+<link rel="shortcut icon" href="./favicon_io/favicon-16x16.png" type="image/x icon"
+    <title>Recicla-Tec</title>
+    <!--link para o Estilo Externo-->
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <header class="main-header">
-        <a href="./pagina1.html">
-
-            <img src="./android-chrome-512x512.png" alt="Logo CEEP" width="150 px" background-position:>
-        </a>
-
-        <br>
-
-        <img src="https://conteudo.imguol.com.br/c/entretenimento/a7/2017/11/17/beterraba-suco-crua-1510937746041_v2_300x225.jpg.webp"
-            alt="link externo">
-
-        <h1>Título da nossa página!</h1>
-
-    </header>
-    <main>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates mollitia maiores repellat earum tempore adipisci
-            optio obcaecati? Excepturi, placeat quaerat repellendus
-            facilis quia rerum nisi debitis perspiciatis, facere,
-            vitae quae!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Iusto itaque alias provident molestiae doloribus architecto
-            enim, expedita beatae nemo quisquam recusandae deleniti
-            fuga, officiis officia tempora vitae, iure praesentium
-            pariatur.</p>
-        <p>parte 3</p>
-    </main>
-
-    <footer>
-        <p>
-            endereço:
-        </p>
-    </footer>
-
-    <!--acessibilidade: vlibras-->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+    <header>
+        <div class="logo">
+            <h2>CEEP CIANORTE</h2>
         </div>
+        <nav>
+            <a href="http://ceepcianorte.com.br">Início</a>
+            <a href="#">Cursos</a>
+            <a href="">E-lixo (Descarte)</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Campanha de Descarte de Lixo Eletrônico</h1>
+        <p>Ajude o meio ambiente e a nosso colégio.
+            Cadastre o equipamento que você deseja doar ou descartar! </p>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    
+    <div class="container">
+        <h2>Formulário de Cadastro de E-Lixo</h2>
+        <form action="/processar-descartar.php" method="post">
+            <label for="nome">Seu Nome (Aluno/Professor/Comunidade):</label>
+            <input type="text" id="nome" name="nome" required>
 
+            <label for="contato">E-mail ou WhatsApp</label>
+
+        </form>
+    </div>
 </body>
-
 </html>
